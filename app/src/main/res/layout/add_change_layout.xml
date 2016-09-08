@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Word:"
+        android:id="@+id/textView"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/txtWord"
+        android:layout_toStartOf="@+id/txtWord" />
+
+    <EditText
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtWord"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meaning:"
+        android:id="@+id/textView2"
+        android:textSize="30dp"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtMeaning"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_alignRight="@+id/txtWord"
+        android:layout_alignEnd="@+id/txtWord" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Example:"
+        android:id="@+id/textView3"
+        android:textSize="30dp"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_below="@+id/txtMeaning"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtExample"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignRight="@+id/txtMeaning"
+        android:layout_alignEnd="@+id/txtMeaning"
+        android:layout_alignLeft="@+id/txtMeaning"
+        android:layout_alignStart="@+id/txtMeaning" />
+
+</TableLayout>
